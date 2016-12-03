@@ -2,10 +2,9 @@
 #include "task.h"
 #include "stdio.h"
 #include "stm32f4xx_conf.h"
-//#include "ssd1306.h"
 
 #include "blinkTask.h"
-//#include "i2cTask.h"
+#include "i2cTask.h"
 
 #include "ccm.h"
 
@@ -23,7 +22,7 @@ int main(void) {
     blinkTask_stack,
     &blinkTask_buffer
   );
-/*
+
   i2cTaskBefore();
   xTaskCreateStatic(
     i2cTaskMain,
@@ -34,7 +33,7 @@ int main(void) {
     i2cTask_stack,
     &i2cTask_buffer
   );
-*/
+
   vTaskStartScheduler();  // should never return
 
   for (;;);

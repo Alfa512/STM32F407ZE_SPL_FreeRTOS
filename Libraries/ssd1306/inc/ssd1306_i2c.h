@@ -39,9 +39,9 @@
 #define I2Cx                          I2C1
 #define I2Cx_CLK                      RCC_APB1Periph_I2C1
 #define I2Cx_SDA_GPIO_CLK             RCC_AHB1Periph_GPIOB
-#define I2Cx_SDA_PIN                  GPIO_Pin_9
+#define I2Cx_SDA_PIN                  GPIO_Pin_7
 #define I2Cx_SDA_GPIO_PORT            GPIOB
-#define I2Cx_SDA_SOURCE               GPIO_PinSource9
+#define I2Cx_SDA_SOURCE               GPIO_PinSource7
 #define I2Cx_SDA_AF                   GPIO_AF_I2C1
 
 #define I2Cx_SCL_GPIO_CLK             RCC_AHB1Periph_GPIOB
@@ -62,7 +62,7 @@ void ssd1306_I2C_Init();
  * @param  data: data to be written
  * @retval None
  */
-void ssd1306_I2C_Write(I2C_TypeDef* I2Cx, uint8_t address, uint8_t reg, uint8_t data);
+void ssd1306_I2C_Write(uint8_t address, uint8_t reg, uint8_t data);
 
 /**
  * @brief  Writes multi bytes to slave
@@ -73,7 +73,7 @@ void ssd1306_I2C_Write(I2C_TypeDef* I2Cx, uint8_t address, uint8_t reg, uint8_t 
  * @param  count: how many bytes will be written
  * @retval None
  */
-void ssd1306_I2C_WriteMulti(I2C_TypeDef* I2Cx, uint8_t address, uint8_t reg, uint8_t *data, uint16_t count);
+void ssd1306_I2C_WriteMulti(uint8_t address, uint8_t reg, uint8_t *data, uint16_t count);
 
 /**
  * @brief  I2C Start condition
@@ -84,7 +84,7 @@ void ssd1306_I2C_WriteMulti(I2C_TypeDef* I2Cx, uint8_t address, uint8_t reg, uin
  * @retval Start condition status
  * @note   For private use
  */
-int16_t ssd1306_I2C_Start(I2C_TypeDef* I2Cx, uint8_t address, uint8_t direction, uint8_t ack);
+int16_t ssd1306_I2C_Start(uint8_t address, uint8_t direction, uint8_t ack);
 
 /**
  * @brief  Stop condition on I2C
@@ -92,7 +92,7 @@ int16_t ssd1306_I2C_Start(I2C_TypeDef* I2Cx, uint8_t address, uint8_t direction,
  * @retval Stop condition status
  * @note   For private use
  */
-uint8_t ssd1306_I2C_Stop(I2C_TypeDef* I2Cx);
+uint8_t ssd1306_I2C_Stop();
 
 /**
  * @brief  Writes to slave
@@ -101,6 +101,8 @@ uint8_t ssd1306_I2C_Stop(I2C_TypeDef* I2Cx);
  * @retval None
  * @note   For private use
  */
-void ssd1306_I2C_WriteData(I2C_TypeDef* I2Cx, uint8_t data);
+void ssd1306_I2C_WriteData(uint8_t data);
+
+uint8_t ssd1306_I2C_IsDeviceConnected(uint8_t address);
 
 #endif

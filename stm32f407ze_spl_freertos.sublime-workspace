@@ -1,0 +1,1245 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"curre",
+				"currentTimeString"
+			],
+			[
+				"error",
+				"errorMessage"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tasks/src/i2cTask.c",
+			"settings":
+			{
+				"buffer_size": 3013,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "78-gdb-show interpreter\n=thread-group-added,id=\"i1\"\n~\"GNU gdb (7.10-1ubuntu3+9) 7.10\\n\"\n~\"Copyright (C) 2015 Free Software Foundation, Inc.\\n\"\n~\"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\\nThis is free software: you are free to change and redistribute it.\\nThere is NO WARRANTY, to the extent permitted by law.  Type \\\"show copying\\\"\\nand \\\"show warranty\\\" for details.\\n\"\n~\"This GDB was configured as \\\"--host=x86_64-linux-gnu --target=arm-none-eabi\\\".\\nType \\\"show configuration\\\" for configuration details.\"\n~\"\\nFor bug reporting instructions, please see:\\n\"\n~\"<http://www.gnu.org/software/gdb/bugs/>.\\n\"\n~\"Find the GDB manual and other documentation resources online at:\\n<http://www.gnu.org/software/gdb/documentation/>.\\n\"\n~\"For help, type \\\"help\\\".\\n\"\n~\"Type \\\"apropos word\\\" to search for commands related to \\\"word\\\"...\\n\"\n~\"Reading symbols from FreeRTOS.elf...\"\n~\"done.\\n\"\n(gdb)\n78^error,msg=\"Undefined show command: \\\"interpreter\\\".  Try \\\"help show\\\".\"\n(gdb)\n79-inferior-tty-set /tmp/tmp0d_fxz\n79^done\n(gdb)\n80-enable-pretty-printing\n81-gdb-set target-async 1\n80^done\n82-gdb-set pagination off\n(gdb)\n83-gdb-set disassembly-flavor intel\n81^done\n(gdb)\n84-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":117\"\n82^done\n(gdb)\n83^error,msg=\"No symbol \\\"disassembly\\\" in current context.\"\n(gdb)\n84^done,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000894\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"117\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:117\"}\n(gdb)\n85-exec-run\n85^error,msg=\"Don't know how to run.  Try \\\"help target\\\".\"\n(gdb)\n86-exec-interrupt --all\n86^done\n(gdb)\n87-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":112\"\n87^done,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000894\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"112\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:112\"}\n(gdb)\n88-exec-interrupt --all\n88^done\n(gdb)\n89-break-delete 2\n89^done\n(gdb)\n90-exec-interrupt --all\n90^done\n(gdb)\n91-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":106\"\n91^done,bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000894\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"106\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:106\"}\n(gdb)\n",
+			"settings":
+			{
+				"buffer_size": 2876,
+				"line_ending": "Unix",
+				"name": "GDB Session",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "1-gdb-show interpreter\n=thread-group-added,id=\"i1\"\n~\"GNU gdb (7.10-1ubuntu3+9) 7.10\\n\"\n~\"Copyright (C) 2015 Free Software Foundation, Inc.\\n\"\n~\"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\\nThis is free software: you are free to change and redistribute it.\\nThere is NO WARRANTY, to the extent permitted by law.  Type \\\"show copying\\\"\\nand \\\"show warranty\\\" for details.\\n\"\n~\"This GDB was configured as \\\"--host=x86_64-linux-gnu --target=arm-none-eabi\\\".\\nType \\\"show configuration\\\" for configuration details.\"\n~\"\\nFor bug reporting instructions, please see:\\n\"\n~\"<http://www.gnu.org/software/gdb/bugs/>.\\n\"\n~\"Find the GDB manual and other documentation resources online at:\\n<http://www.gnu.org/software/gdb/documentation/>.\\n\"\n~\"For help, type \\\"help\\\".\\n\"\n~\"Type \\\"apropos word\\\" to search for commands related to \\\"word\\\"...\\n\"\n~\"Reading symbols from FreeRTOS.elf...\"\n~\"done.\\n\"\n(gdb)\n1^error,msg=\"Undefined show command: \\\"interpreter\\\".  Try \\\"help show\\\".\"\n(gdb)\n2-inferior-tty-set /tmp/tmp1yl6gg\n2^done\n(gdb)\n3-enable-pretty-printing\n4-gdb-set target-async 1\n3^done\n(gdb)\n5-gdb-set pagination off\n4^done\n(gdb)\n6-gdb-set disassembly-flavor intel\n5^done\n(gdb)\n6^error,msg=\"No symbol \\\"disassembly\\\" in current context.\"\n(gdb)\n7-exec-run\n7^error,msg=\"Don't know how to run.  Try \\\"help target\\\".\"\n(gdb)\n8target extended-remote localhost:4242\n&\"target extended-remote localhost:4242\\n\"\n~\"Remote debugging using localhost:4242\\n\"\n=thread-group-started,id=\"i1\",pid=\"42000\"\n=thread-created,id=\"1\",group-id=\"i1\"\n~\"0x080023fc in Reset_Handler ()\\n\"\n*stopped,frame={addr=\"0x080023fc\",func=\"Reset_Handler\",args=[]},thread-id=\"1\",stopped-threads=\"all\"\n9-thread-select 1\n10-stack-info-frame\n8^done\n(gdb)\n9^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x080023fc\",func=\"Reset_Handler\",args=[]}\n(gdb)\n10^done,frame={level=\"0\",addr=\"0x080023fc\",func=\"Reset_Handler\"}\n(gdb)\n11-stack-list-frames\n11^done,stack=[frame={level=\"0\",addr=\"0x080023fc\",func=\"Reset_Handler\"}]\n(gdb)\n12-stack-list-arguments 1\n12^done,stack-args=[frame={level=\"0\",args=[]}]\n(gdb)\n13-thread-info\n13^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x080023fc\",func=\"Reset_Handler\",args=[]},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n14-thread-list-ids\n14^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n15-stack-list-arguments 0 0 0\n15^done,stack-args=[frame={level=\"0\",args=[]}]\n(gdb)\n16-stack-list-locals 0\n16^done,locals=[]\n(gdb)\n17-data-list-register-names\n17^done,register-names=[\"r0\",\"r1\",\"r2\",\"r3\",\"r4\",\"r5\",\"r6\",\"r7\",\"r8\",\"r9\",\"r10\",\"r11\",\"r12\",\"sp\",\"lr\",\"pc\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"xpsr\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"msp\",\"psp\",\"control\",\"faultmask\",\"basepri\",\"primask\",\"s0\",\"s1\",\"s2\",\"s3\",\"s4\",\"s5\",\"s6\",\"s7\",\"s8\",\"s9\",\"s10\",\"s11\",\"s12\",\"s13\",\"s14\",\"s15\",\"s16\",\"s17\",\"s18\",\"s19\",\"s20\",\"s21\",\"s22\",\"s23\",\"s24\",\"s25\",\"s26\",\"s27\",\"s28\",\"s29\",\"s30\",\"s31\",\"fpscr\"]\n(gdb)\n18-data-list-register-values x\n18^done,register-values=[{number=\"0\",value=\"0x0\"},{number=\"1\",value=\"0x0\"},{number=\"2\",value=\"0x0\"},{number=\"3\",value=\"0x0\"},{number=\"4\",value=\"0x0\"},{number=\"5\",value=\"0x0\"},{number=\"6\",value=\"0x0\"},{number=\"7\",value=\"0x0\"},{number=\"8\",value=\"0x0\"},{number=\"9\",value=\"0x0\"},{number=\"10\",value=\"0x0\"},{number=\"11\",value=\"0x0\"},{number=\"12\",value=\"0x0\"},{number=\"13\",value=\"0x2001fffc\"},{number=\"14\",value=\"0xffffffff\"},{number=\"15\",value=\"0x80023fc\"},{number=\"25\",value=\"0x1000000\"},{number=\"91\",value=\"0x2001fffc\"},{number=\"92\",value=\"0x0\"},{number=\"93\",value=\"0x0\"},{number=\"94\",value=\"0x0\"},{number=\"95\",value=\"0x0\"},{number=\"96\",value=\"0x0\"},{number=\"97\",value=\"0x0\"},{number=\"98\",value=\"0x0\"},{number=\"99\",value=\"0x0\"},{number=\"100\",value=\"0x0\"},{number=\"101\",value=\"0x0\"},{number=\"102\",value=\"0x0\"},{number=\"103\",value=\"0x0\"},{number=\"104\",value=\"0x0\"},{number=\"105\",value=\"0x0\"},{number=\"106\",value=\"0x0\"},{number=\"107\",value=\"0x0\"},{number=\"108\",value=\"0x0\"},{number=\"109\",value=\"0x0\"},{number=\"110\",value=\"0x0\"},{number=\"111\",value=\"0x0\"},{number=\"112\",value=\"0x0\"},{number=\"113\",value=\"0x0\"},{number=\"114\",value=\"0x0\"},{number=\"115\",value=\"0x0\"},{number=\"116\",value=\"0x0\"},{number=\"117\",value=\"0x0\"},{number=\"118\",value=\"0x0\"},{number=\"119\",value=\"0x0\"},{number=\"120\",value=\"0x0\"},{number=\"121\",value=\"0x0\"},{number=\"122\",value=\"0x0\"},{number=\"123\",value=\"0x0\"},{number=\"124\",value=\"0x0\"},{number=\"125\",value=\"0x0\"},{number=\"126\",value=\"0x0\"},{number=\"127\",value=\"0x0\"},{number=\"128\",value=\"0x0\"},{number=\"129\",value=\"0x0\"}]\n(gdb)\n19-data-evaluate-expression $pc\n19^done,value=\"0x80023fc <Reset_Handler>\"\n(gdb)\n20-data-disassemble -s \"$pc-32\" -e \"$pc+200\" -- 1\n20^done,asm_insns=[src_and_asm_line={line=\"580\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[{address=\"0x080023e0\",func-name=\"GPIO_PinAFConfig\",offset=\"10\",inst=\"push\\t{r4, lr}\"}]},src_and_asm_line={line=\"581\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"582\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"583\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"584\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"585\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"586\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"587\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"588\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[]},src_and_asm_line={line=\"589\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[{address=\"0x080023e2\",func-name=\"GPIO_PinAFConfig\",offset=\"12\",inst=\"lsls\\tr3, r3, #2\"},{address=\"0x080023f2\",func-name=\"GPIO_PinAFConfig\",offset=\"28\",inst=\"lsls\\tr2, r3\"}]},src_and_asm_line={line=\"590\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[{address=\"0x080023e4\",func-name=\"GPIO_PinAFConfig\",offset=\"14\",inst=\"ldr\\tr4, [r0, #32]\"},{address=\"0x080023e6\",func-name=\"GPIO_PinAFConfig\",offset=\"16\",inst=\"movs\\tr1, #15\"},{address=\"0x080023e8\",func-name=\"GPIO_PinAFConfig\",offset=\"18\",inst=\"lsls\\tr1, r3\"},{address=\"0x080023ea\",func-name=\"GPIO_PinAFConfig\",offset=\"20\",inst=\"bic.w\\tr1, r4, r1\"},{address=\"0x080023ee\",func-name=\"GPIO_PinAFConfig\",offset=\"24\",inst=\"str\\tr1, [r0, #32]\"}]},src_and_asm_line={line=\"591\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[{address=\"0x080023f0\",func-name=\"GPIO_PinAFConfig\",offset=\"26\",inst=\"ldr\\tr1, [r0, #32]\"},{address=\"0x080023f4\",func-name=\"GPIO_PinAFConfig\",offset=\"30\",inst=\"orrs\\tr1, r2\"}]},src_and_asm_line={line=\"592\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c\",line_asm_insn=[{address=\"0x080023f6\",func-name=\"GPIO_PinAFConfig\",offset=\"32\",inst=\"str\\tr1, [r0, #32]\"},{address=\"0x080023f8\",func-name=\"GPIO_PinAFConfig\",offset=\"34\",inst=\"pop\\t{r4, pc}\"}]}]\n(gdb)\n21-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":73\"\n21^done,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\"}\n(gdb)\n22-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":84\"\n22^done,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\"}\n(gdb)\n23-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":95\"\n23^done,bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000896\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"95\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:95\"}\n(gdb)\n24-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":117\"\n24^done,bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x080008ce\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"117\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:117\"}\n(gdb)\n25-exec-continue\n~\"Note: automatically using hardware breakpoints for read-only addresses.\\n\"\n25^running\n*running,thread-id=\"all\"\n(gdb)\n(gdb)\n=breakpoint-modified,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\",thread-groups=[\"i1\"],times=\"1\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\"}\n~\"\\nBreakpoint \"\n~\"1, i2cTask_WriteReg (deviceAddr=50 '2', regAddr=100 'd', Data=134 '\\\\206') at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\\n\"\n~\"73\\t  I2C_GenerateSTART(I2C1, ENABLE);\\n\"\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"1\",frame={addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"},thread-id=\"1\",stopped-threads=\"all\"\n26-thread-select 1\n27-stack-info-frame\n26^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"}\n(gdb)\n27^done,frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"}\n(gdb)\n28-stack-list-frames\n28^done,stack=[frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"},frame={level=\"1\",addr=\"0x080008fa\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"15\"},frame={level=\"2\",addr=\"0x080008fc\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"16\"},frame={level=\"3\",addr=\"0xa5a5a5a4\",func=\"??\"}]\n(gdb)\n29-stack-list-arguments 1\n29^done,stack-args=[frame={level=\"0\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}]},frame={level=\"1\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"2\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"3\",args=[]}]\n(gdb)\n30-thread-info\n30^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n31-thread-list-ids\n31^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n32-stack-list-arguments 0 0 0\n32^done,stack-args=[frame={level=\"0\",args=[name=\"deviceAddr\",name=\"regAddr\",name=\"Data\"]}]\n(gdb)\n33-var-create - * deviceAddr\n33^done,name=\"var1\",numchild=\"0\",value=\"50 '2'\",type=\"uint8_t\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n34-var-create - * regAddr\n34^done,name=\"var2\",numchild=\"0\",value=\"100 'd'\",type=\"uint8_t\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n35-var-create - * Data\n35^done,name=\"var3\",numchild=\"0\",value=\"134 '\\\\206'\",type=\"uint8_t\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n36-stack-list-locals 0\n36^done,locals=[name=\"timeout\"]\n(gdb)\n37-var-create - * timeout\n37^done,name=\"var4\",numchild=\"0\",value=\"10000\",type=\"uint32_t\",thread-id=\"1\",has_more=\"0\"\n(gdb)\n38-data-list-changed-registers\n38^done,changed-registers=[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"25\",\"91\",\"92\",\"93\",\"94\",\"95\",\"96\",\"97\",\"98\",\"99\",\"100\",\"101\",\"102\",\"103\",\"104\",\"105\",\"106\",\"107\",\"108\",\"109\",\"110\",\"111\",\"112\",\"113\",\"114\",\"115\",\"116\",\"117\",\"118\",\"119\",\"120\",\"121\",\"122\",\"123\",\"124\",\"125\",\"126\",\"127\",\"128\",\"129\"]\n(gdb)\n39-data-list-register-values x 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 25 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129\n39^done,register-values=[{number=\"0\",value=\"0x32\"},{number=\"1\",value=\"0x64\"},{number=\"2\",value=\"0x86\"},{number=\"3\",value=\"0xa5a5a5a5\"},{number=\"4\",value=\"0xa5a5a5a5\"},{number=\"5\",value=\"0xa5a5a5a5\"},{number=\"6\",value=\"0x64\"},{number=\"7\",value=\"0x32\"},{number=\"8\",value=\"0xa5a5a5a5\"},{number=\"9\",value=\"0xa5a5a5a5\"},{number=\"10\",value=\"0xa5a5a5a5\"},{number=\"11\",value=\"0xa5a5a5a5\"},{number=\"12\",value=\"0xa5a5a5a5\"},{number=\"13\",value=\"0x10000f50\"},{number=\"14\",value=\"0x80008fb\"},{number=\"15\",value=\"0x800085a\"},{number=\"25\",value=\"0x21000000\"},{number=\"91\",value=\"0x2001ffd8\"},{number=\"92\",value=\"0x10000f50\"},{number=\"93\",value=\"0x2\"},{number=\"94\",value=\"0x0\"},{number=\"95\",value=\"0x0\"},{number=\"96\",value=\"0x0\"},{number=\"97\",value=\"0x0\"},{number=\"98\",value=\"0x0\"},{number=\"99\",value=\"0x0\"},{number=\"100\",value=\"0x0\"},{number=\"101\",value=\"0x0\"},{number=\"102\",value=\"0x0\"},{number=\"103\",value=\"0x0\"},{number=\"104\",value=\"0x0\"},{number=\"105\",value=\"0x0\"},{number=\"106\",value=\"0x0\"},{number=\"107\",value=\"0x0\"},{number=\"108\",value=\"0x0\"},{number=\"109\",value=\"0x0\"},{number=\"110\",value=\"0x0\"},{number=\"111\",value=\"0x0\"},{number=\"112\",value=\"0x0\"},{number=\"113\",value=\"0x0\"},{number=\"114\",value=\"0x0\"},{number=\"115\",value=\"0x0\"},{number=\"116\",value=\"0x0\"},{number=\"117\",value=\"0x0\"},{number=\"118\",value=\"0x0\"},{number=\"119\",value=\"0x0\"},{number=\"120\",value=\"0x0\"},{number=\"121\",value=\"0x0\"},{number=\"122\",value=\"0x0\"},{number=\"123\",value=\"0x0\"},{number=\"124\",value=\"0x0\"},{number=\"125\",value=\"0x0\"},{number=\"126\",value=\"0x0\"},{number=\"127\",value=\"0x0\"},{number=\"128\",value=\"0x0\"},{number=\"129\",value=\"0x0\"}]\n(gdb)\n40-data-evaluate-expression $pc\n40^done,value=\"0x800085a <i2cTask_WriteReg+6>\"\n(gdb)\n41-data-disassemble -s \"$pc-32\" -e \"$pc+200\" -- 1\n41^done,asm_insns=[src_and_asm_line={line=\"6\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"7\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000850\",func-name=\"i2cTaskBefore\",offset=\"0\",inst=\"b.w\\t0x80007b4 <i2cTask_init>\"}]},src_and_asm_line={line=\"8\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"9\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"10\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008e8\",func-name=\"i2cTaskMain\",offset=\"0\",inst=\"push\\t{r3, lr}\"}]},src_and_asm_line={line=\"11\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"12\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"13\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"14\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008ea\",func-name=\"i2cTaskMain\",offset=\"2\",inst=\"movs\\tr0, #100\\t; 0x64\"},{address=\"0x080008ec\",func-name=\"i2cTaskMain\",offset=\"4\",inst=\"bl\\t0x8001828 <vTaskDelay>\"}]},src_and_asm_line={line=\"15\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008f0\",func-name=\"i2cTaskMain\",offset=\"8\",inst=\"movs\\tr1, #100\\t; 0x64\"},{address=\"0x080008f2\",func-name=\"i2cTaskMain\",offset=\"10\",inst=\"movs\\tr2, #134\\t; 0x86\"},{address=\"0x080008f4\",func-name=\"i2cTaskMain\",offset=\"12\",inst=\"movs\\tr0, #50\\t; 0x32\"},{address=\"0x080008f6\",func-name=\"i2cTaskMain\",offset=\"14\",inst=\"bl\\t0x8000854 <i2cTask_WriteReg>\"}]},src_and_asm_line={line=\"16\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008fa\",func-name=\"i2cTaskMain\",offset=\"18\",inst=\"b.n\\t0x80008ea <i2cTaskMain+2>\"}]},src_and_asm_line={line=\"17\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"18\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"19\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"20\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"21\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"22\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"23\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"24\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"25\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"26\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"27\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"28\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"29\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"30\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"31\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"32\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"33\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"34\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"35\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"36\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"37\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"38\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"39\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"40\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"41\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"42\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"43\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"44\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"45\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"46\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"47\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"48\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"49\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"50\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"51\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"52\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"53\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"54\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"55\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"56\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"57\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000840\",func-name=\"i2cTask_init\",offset=\"140\",inst=\"strh.w\\tr5, [sp, #12]\"}]},src_and_asm_line={line=\"58\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"59\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"60\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"61\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"62\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"63\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"64\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"65\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x0800083e\",func-name=\"i2cTask_init\",offset=\"138\",inst=\"mov\\tr0, r4\"},{address=\"0x08000844\",func-name=\"i2cTask_init\",offset=\"144\",inst=\"bl\\t0x8002150 <I2C_Init>\"}]},src_and_asm_line={line=\"66\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000848\",func-name=\"i2cTask_init\",offset=\"148\",inst=\"add\\tsp, #24\"},{address=\"0x0800084a\",func-name=\"i2cTask_init\",offset=\"150\",inst=\"pop\\t{r4, r5, r6, pc}\"},{address=\"0x0800084c\",func-name=\"i2cTask_init\",offset=\"152\",inst=\"lsls\\tr0, r0, #16\"},{address=\"0x0800084e\",func-name=\"i2cTask_init\",offset=\"154\",inst=\"ands\\tr2, r0\"}]},src_and_asm_line={line=\"67\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"68\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"69\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000854\",func-name=\"i2cTask_WriteReg\",offset=\"0\",inst=\"push\\t{r3, r4, r5, r6, r7, lr}\"},{address=\"0x08000856\",func-name=\"i2cTask_WriteReg\",offset=\"2\",inst=\"mov\\tr7, r0\"},{address=\"0x08000858\",func-name=\"i2cTask_WriteReg\",offset=\"4\",inst=\"mov\\tr6, r1\"},{address=\"0x0800085e\",func-name=\"i2cTask_WriteReg\",offset=\"10\",inst=\"mov\\tr5, r2\"}]},src_and_asm_line={line=\"70\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"71\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"72\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"73\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x0800085a\",func-name=\"i2cTask_WriteReg\",offset=\"6\",inst=\"ldr\\tr0, [pc, #128]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x0800085c\",func-name=\"i2cTask_WriteReg\",offset=\"8\",inst=\"movs\\tr1, #1\"},{address=\"0x08000860\",func-name=\"i2cTask_WriteReg\",offset=\"12\",inst=\"bl\\t0x800223c <I2C_GenerateSTART>\"}]},src_and_asm_line={line=\"74\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"75\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"76\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"77\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000864\",func-name=\"i2cTask_WriteReg\",offset=\"16\",inst=\"movw\\tr4, #10001\\t; 0x2711\"},{address=\"0x08000868\",func-name=\"i2cTask_WriteReg\",offset=\"20\",inst=\"ldr\\tr0, [pc, #112]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x0800086a\",func-name=\"i2cTask_WriteReg\",offset=\"22\",inst=\"ldr\\tr1, [pc, #116]\\t; (0x80008e0 <i2cTask_WriteReg+140>)\"},{address=\"0x0800086c\",func-name=\"i2cTask_WriteReg\",offset=\"24\",inst=\"bl\\t0x8002270 <I2C_CheckEvent>\"},{address=\"0x08000870\",func-name=\"i2cTask_WriteReg\",offset=\"28\",inst=\"cbnz\\tr0, 0x800087a <i2cTask_WriteReg+38>\"}]},src_and_asm_line={line=\"78\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"79\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"80\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000872\",func-name=\"i2cTask_WriteReg\",offset=\"30\",inst=\"subs\\tr4, #1\"},{address=\"0x08000874\",func-name=\"i2cTask_WriteReg\",offset=\"32\",inst=\"bne.n\\t0x8000868 <i2cTask_WriteReg+20>\"},{address=\"0x08000876\",func-name=\"i2cTask_WriteReg\",offset=\"34\",inst=\"movs\\tr0, #255\\t; 0xff\"},{address=\"0x08000878\",func-name=\"i2cTask_WriteReg\",offset=\"36\",inst=\"pop\\t{r3, r4, r5, r6, r7, pc}\"}]},src_and_asm_line={line=\"81\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"82\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"83\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"84\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x0800087a\",func-name=\"i2cTask_WriteReg\",offset=\"38\",inst=\"ldr\\tr0, [pc, #96]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x0800087c\",func-name=\"i2cTask_WriteReg\",offset=\"40\",inst=\"mov\\tr1, r7\"},{address=\"0x0800087e\",func-name=\"i2cTask_WriteReg\",offset=\"42\",inst=\"bl\\t0x800226c <I2C_SendData>\"}]},src_and_asm_line={line=\"85\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"86\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"87\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"88\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000882\",func-name=\"i2cTask_WriteReg\",offset=\"46\",inst=\"movw\\tr4, #10001\\t; 0x2711\"},{address=\"0x08000886\",func-name=\"i2cTask_WriteReg\",offset=\"50\",inst=\"ldr\\tr0, [pc, #84]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x08000888\",func-name=\"i2cTask_WriteReg\",offset=\"52\",inst=\"ldr\\tr1, [pc, #88]\\t; (0x80008e4 <i2cTask_WriteReg+144>)\"},{address=\"0x0800088a\",func-name=\"i2cTask_WriteReg\",offset=\"54\",inst=\"bl\\t0x8002270 <I2C_CheckEvent>\"},{address=\"0x0800088e\",func-name=\"i2cTask_WriteReg\",offset=\"58\",inst=\"cbnz\\tr0, 0x8000896 <i2cTask_WriteReg+66>\"}]},src_and_asm_line={line=\"89\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"90\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"91\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000890\",func-name=\"i2cTask_WriteReg\",offset=\"60\",inst=\"subs\\tr4, #1\"},{address=\"0x08000892\",func-name=\"i2cTask_WriteReg\",offset=\"62\",inst=\"bne.n\\t0x8000886 <i2cTask_WriteReg+50>\"},{address=\"0x08000894\",func-name=\"i2cTask_WriteReg\",offset=\"64\",inst=\"b.n\\t0x8000876 <i2cTask_WriteReg+34>\"}]},src_and_asm_line={line=\"92\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"93\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"94\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"95\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x08000896\",func-name=\"i2cTask_WriteReg\",offset=\"66\",inst=\"ldr\\tr0, [pc, #68]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x08000898\",func-name=\"i2cTask_WriteReg\",offset=\"68\",inst=\"mov\\tr1, r6\"},{address=\"0x0800089a\",func-name=\"i2cTask_WriteReg\",offset=\"70\",inst=\"bl\\t0x800226c <I2C_SendData>\"},{address=\"0x0800089e\",func-name=\"i2cTask_WriteReg\",offset=\"74\",inst=\"movw\\tr4, #10001\\t; 0x2711\"}]},src_and_asm_line={line=\"96\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"97\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"98\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"99\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008a2\",func-name=\"i2cTask_WriteReg\",offset=\"78\",inst=\"ldr\\tr0, [pc, #56]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x080008a4\",func-name=\"i2cTask_WriteReg\",offset=\"80\",inst=\"ldr\\tr1, [pc, #60]\\t; (0x80008e4 <i2cTask_WriteReg+144>)\"},{address=\"0x080008a6\",func-name=\"i2cTask_WriteReg\",offset=\"82\",inst=\"bl\\t0x8002270 <I2C_CheckEvent>\"},{address=\"0x080008aa\",func-name=\"i2cTask_WriteReg\",offset=\"86\",inst=\"cbnz\\tr0, 0x80008b2 <i2cTask_WriteReg+94>\"}]},src_and_asm_line={line=\"100\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"101\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"102\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008ac\",func-name=\"i2cTask_WriteReg\",offset=\"88\",inst=\"subs\\tr4, #1\"},{address=\"0x080008ae\",func-name=\"i2cTask_WriteReg\",offset=\"90\",inst=\"bne.n\\t0x80008a2 <i2cTask_WriteReg+78>\"},{address=\"0x080008b0\",func-name=\"i2cTask_WriteReg\",offset=\"92\",inst=\"b.n\\t0x8000876 <i2cTask_WriteReg+34>\"}]},src_and_asm_line={line=\"103\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"104\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"105\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"106\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008b2\",func-name=\"i2cTask_WriteReg\",offset=\"94\",inst=\"ldr\\tr0, [pc, #40]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x080008b4\",func-name=\"i2cTask_WriteReg\",offset=\"96\",inst=\"mov\\tr1, r5\"},{address=\"0x080008b6\",func-name=\"i2cTask_WriteReg\",offset=\"98\",inst=\"bl\\t0x800226c <I2C_SendData>\"},{address=\"0x080008ba\",func-name=\"i2cTask_WriteReg\",offset=\"102\",inst=\"movw\\tr4, #10001\\t; 0x2711\"}]},src_and_asm_line={line=\"107\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"108\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"109\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"110\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008be\",func-name=\"i2cTask_WriteReg\",offset=\"106\",inst=\"ldr\\tr0, [pc, #28]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x080008c0\",func-name=\"i2cTask_WriteReg\",offset=\"108\",inst=\"ldr\\tr1, [pc, #32]\\t; (0x80008e4 <i2cTask_WriteReg+144>)\"},{address=\"0x080008c2\",func-name=\"i2cTask_WriteReg\",offset=\"110\",inst=\"bl\\t0x8002270 <I2C_CheckEvent>\"},{address=\"0x080008c6\",func-name=\"i2cTask_WriteReg\",offset=\"114\",inst=\"cbnz\\tr0, 0x80008ce <i2cTask_WriteReg+122>\"}]},src_and_asm_line={line=\"111\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"112\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"113\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008c8\",func-name=\"i2cTask_WriteReg\",offset=\"116\",inst=\"subs\\tr4, #1\"},{address=\"0x080008ca\",func-name=\"i2cTask_WriteReg\",offset=\"118\",inst=\"bne.n\\t0x80008be <i2cTask_WriteReg+106>\"},{address=\"0x080008cc\",func-name=\"i2cTask_WriteReg\",offset=\"120\",inst=\"b.n\\t0x8000876 <i2cTask_WriteReg+34>\"}]},src_and_asm_line={line=\"114\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"115\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"116\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"117\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008ce\",func-name=\"i2cTask_WriteReg\",offset=\"122\",inst=\"ldr\\tr0, [pc, #12]\\t; (0x80008dc <i2cTask_WriteReg+136>)\"},{address=\"0x080008d0\",func-name=\"i2cTask_WriteReg\",offset=\"124\",inst=\"movs\\tr1, #1\"},{address=\"0x080008d2\",func-name=\"i2cTask_WriteReg\",offset=\"126\",inst=\"bl\\t0x8002254 <I2C_GenerateSTOP>\"}]},src_and_asm_line={line=\"118\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"119\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[]},src_and_asm_line={line=\"120\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008d6\",func-name=\"i2cTask_WriteReg\",offset=\"130\",inst=\"movs\\tr0, #0\"}]},src_and_asm_line={line=\"121\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line_asm_insn=[{address=\"0x080008d8\",func-name=\"i2cTask_WriteReg\",offset=\"132\",inst=\"pop\\t{r3, r4, r5, r6, r7, pc}\"},{address=\"0x080008da\",func-name=\"i2cTask_WriteReg\",offset=\"134\",inst=\"nop\"},{address=\"0x080008dc\",func-name=\"i2cTask_WriteReg\",offset=\"136\",inst=\"strb\\tr0, [r0, r0]\"},{address=\"0x080008de\",func-name=\"i2cTask_WriteReg\",offset=\"138\",inst=\"ands\\tr0, r0\"},{address=\"0x080008e0\",func-name=\"i2cTask_WriteReg\",offset=\"140\",inst=\"movs\\tr1, r0\"},{address=\"0x080008e2\",func-name=\"i2cTask_WriteReg\",offset=\"142\",inst=\"movs\\tr3, r0\"},{address=\"0x080008e4\",func-name=\"i2cTask_WriteReg\",offset=\"144\",inst=\"lsls\\tr4, r0, #2\"},{address=\"0x080008e6\",func-name=\"i2cTask_WriteReg\",offset=\"146\",inst=\"movs\\tr7, r0\"},{address=\"0x080008fc\",func-name=\"prvTaskExitError\",offset=\"0\",inst=\"ldr\\tr3, [pc, #40]\\t; (0x8000928 <prvTaskExitError+44>)\"},{address=\"0x080008fe\",func-name=\"prvTaskExitError\",offset=\"2\",inst=\"ldr\\tr3, [r3, #0]\"},{address=\"0x08000900\",func-name=\"prvTaskExitError\",offset=\"4\",inst=\"adds\\tr3, #1\"},{address=\"0x08000902\",func-name=\"prvTaskExitError\",offset=\"6\",inst=\"beq.n\\t0x8000916 <prvTaskExitError+26>\"}]}]\n(gdb)\n42-exec-continue\n42^running\n*running,thread-id=\"all\"\n(gdb)\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\",thread-groups=[\"i1\"],times=\"1\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\"}\n~\"\\nBreakpoint \"\n~\"2, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\\n\"\n~\"84\\t  I2C_SendData(I2Cx, deviceAddr);\\n\"\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"},thread-id=\"1\",stopped-threads=\"all\"\n43-thread-select 1\n44-stack-info-frame\n43^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"}\n(gdb)\n44^done,frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"}\n(gdb)\n45-stack-list-frames\n45^done,stack=[frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"},frame={level=\"1\",addr=\"0x080008fa\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"15\"},frame={level=\"2\",addr=\"0x080008fc\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"16\"},frame={level=\"3\",addr=\"0xa5a5a5a4\",func=\"??\"}]\n(gdb)\n46-stack-list-arguments 1\n46^done,stack-args=[frame={level=\"0\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"2\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"3\",args=[]}]\n(gdb)\n47-thread-info\n47^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n48-thread-list-ids\n48^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n49-var-update --all-values *\n49^done,changelist=[{name=\"var4\",value=\"9941\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var3\",value=\"<optimized out>\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var2\",value=\"<optimized out>\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var1\",value=\"<optimized out>\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"}]\n(gdb)\n50-stack-list-locals 0\n50^done,locals=[name=\"timeout\"]\n(gdb)\n51-data-list-changed-registers\n51^done,changed-registers=[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"14\",\"15\",\"25\"]\n(gdb)\n52-data-list-register-values x 0 1 2 3 4 5 14 15 25\n52^done,register-values=[{number=\"0\",value=\"0x1\"},{number=\"1\",value=\"0x30001\"},{number=\"2\",value=\"0x1\"},{number=\"3\",value=\"0x0\"},{number=\"4\",value=\"0x26d6\"},{number=\"5\",value=\"0x86\"},{number=\"14\",value=\"0x8000871\"},{number=\"15\",value=\"0x800087a\"},{number=\"25\",value=\"0x1000000\"}]\n(gdb)\n53-data-evaluate-expression $pc\n53^done,value=\"0x800087a <i2cTask_WriteReg+38>\"\n(gdb)\n54-exec-continue\n54^running\n*running,thread-id=\"all\"\n(gdb)\n(gdb)\n=breakpoint-modified,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\",thread-groups=[\"i1\"],times=\"2\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\"}\n~\"\\nBreakpoint \"\n~\"1, i2cTask_WriteReg (deviceAddr=50 '2', regAddr=100 'd', Data=134 '\\\\206') at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\\n\"\n~\"73\\t  I2C_GenerateSTART(I2C1, ENABLE);\\n\"\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"1\",frame={addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"},thread-id=\"1\",stopped-threads=\"all\"\n55-thread-select 1\n56-stack-info-frame\n55^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"}\n(gdb)\n56^done,frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"}\n(gdb)\n57-stack-list-frames\n57^done,stack=[frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"},frame={level=\"1\",addr=\"0x080008fa\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"15\"},frame={level=\"2\",addr=\"0x080008fc\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"16\"},frame={level=\"3\",addr=\"0xa5a5a5a4\",func=\"??\"}]\n(gdb)\n58-stack-list-arguments 1\n58^done,stack-args=[frame={level=\"0\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}]},frame={level=\"1\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"2\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"3\",args=[]}]\n(gdb)\n59-thread-info\n59^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x0800085a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"50 '2'\"},{name=\"regAddr\",value=\"100 'd'\"},{name=\"Data\",value=\"134 '\\\\206'\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"73\"},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n60-thread-list-ids\n60^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n61-var-update --all-values *\n61^done,changelist=[{name=\"var4\",value=\"10000\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var3\",value=\"134 '\\\\206'\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var2\",value=\"100 'd'\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var1\",value=\"50 '2'\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"}]\n(gdb)\n62-stack-list-locals 0\n62^done,locals=[name=\"timeout\"]\n(gdb)\n63-data-list-changed-registers\n63^done,changed-registers=[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"14\",\"15\",\"25\"]\n(gdb)\n64-data-list-register-values x 0 1 2 3 4 5 14 15 25\n64^done,register-values=[{number=\"0\",value=\"0x32\"},{number=\"1\",value=\"0x64\"},{number=\"2\",value=\"0x86\"},{number=\"3\",value=\"0xa5a5a5a5\"},{number=\"4\",value=\"0xa5a5a5a5\"},{number=\"5\",value=\"0xa5a5a5a5\"},{number=\"14\",value=\"0x80008fb\"},{number=\"15\",value=\"0x800085a\"},{number=\"25\",value=\"0x21000000\"}]\n(gdb)\n65-data-evaluate-expression $pc\n65^done,value=\"0x800085a <i2cTask_WriteReg+6>\"\n(gdb)\n66-exec-continue\n66^running\n*running,thread-id=\"all\"\n(gdb)\n(gdb)\n=breakpoint-modified,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\",thread-groups=[\"i1\"],times=\"2\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\"}\n~\"\\nBreakpoint \"\n~\"2, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\\n\"\n~\"84\\t  I2C_SendData(I2Cx, deviceAddr);\\n\"\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"2\",frame={addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"},thread-id=\"1\",stopped-threads=\"all\"\n67-thread-select 1\n68-stack-info-frame\n67^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"}\n(gdb)\n68^done,frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"}\n(gdb)\n69-stack-list-frames\n69^done,stack=[frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"},frame={level=\"1\",addr=\"0x080008fa\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"15\"},frame={level=\"2\",addr=\"0x080008fc\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"16\"},frame={level=\"3\",addr=\"0xa5a5a5a4\",func=\"??\"}]\n(gdb)\n70-stack-list-arguments 1\n70^done,stack-args=[frame={level=\"0\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"2\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"3\",args=[]}]\n(gdb)\n71-thread-info\n71^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x0800087a\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"84\"},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n72-thread-list-ids\n72^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n73-var-update --all-values *\n73^done,changelist=[{name=\"var4\",value=\"9877\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var3\",value=\"<optimized out>\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var2\",value=\"<optimized out>\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"},{name=\"var1\",value=\"<optimized out>\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"}]\n(gdb)\n74-stack-list-locals 0\n74^done,locals=[name=\"timeout\"]\n(gdb)\n75-data-list-changed-registers\n75^done,changed-registers=[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"14\",\"15\",\"25\"]\n(gdb)\n76-data-list-register-values x 0 1 2 3 4 5 14 15 25\n76^done,register-values=[{number=\"0\",value=\"0x1\"},{number=\"1\",value=\"0x30001\"},{number=\"2\",value=\"0x401\"},{number=\"3\",value=\"0x0\"},{number=\"4\",value=\"0x2696\"},{number=\"5\",value=\"0x86\"},{number=\"14\",value=\"0x8000871\"},{number=\"15\",value=\"0x800087a\"},{number=\"25\",value=\"0x1000000\"}]\n(gdb)\n77-data-evaluate-expression $pc\n77^done,value=\"0x800087a <i2cTask_WriteReg+38>\"\n(gdb)\n78-break-delete 4\n78^done\n(gdb)\n79-break-delete 3\n79^done\n(gdb)\n80-break-insert \"\\\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\\\":90\"\n80^done,bkpt={number=\"5\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"90\",thread-groups=[\"i1\"],times=\"0\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:90\"}\n(gdb)\n81-exec-continue\n81^running\n*running,thread-id=\"all\"\n(gdb)\n(gdb)\n=breakpoint-modified,bkpt={number=\"5\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"90\",thread-groups=[\"i1\"],times=\"1\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:90\"}\n~\"\\nBreakpoint \"\n~\"5, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:91\\n\"\n~\"91\\t    if ((timeout--) == 0) return 0xFF;\\n\"\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"5\",frame={addr=\"0x08000890\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"},thread-id=\"1\",stopped-threads=\"all\"\n82-thread-select 1\n83-stack-info-frame\n82^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"}\n(gdb)\n83^done,frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"}\n(gdb)\n84-stack-list-frames\n84^done,stack=[frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"},frame={level=\"1\",addr=\"0x080008fa\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"15\"},frame={level=\"2\",addr=\"0x080008fc\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"16\"},frame={level=\"3\",addr=\"0xa5a5a5a4\",func=\"??\"}]\n(gdb)\n85-stack-list-arguments 1\n85^done,stack-args=[frame={level=\"0\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"2\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"3\",args=[]}]\n(gdb)\n86-thread-info\n86^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n87-thread-list-ids\n87^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n88-var-update --all-values *\n88^done,changelist=[{name=\"var4\",value=\"9999\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"}]\n(gdb)\n89-stack-list-locals 0\n89^done,locals=[name=\"timeout\"]\n(gdb)\n90-data-list-changed-registers\n90^done,changed-registers=[\"0\",\"1\",\"2\",\"3\",\"4\",\"14\",\"15\",\"25\"]\n(gdb)\n91-data-list-register-values x 0 1 2 3 4 14 15 25\n91^done,register-values=[{number=\"0\",value=\"0x0\"},{number=\"1\",value=\"0x70084\"},{number=\"2\",value=\"0x400\"},{number=\"3\",value=\"0xfffbff7c\"},{number=\"4\",value=\"0x2711\"},{number=\"14\",value=\"0x800088f\"},{number=\"15\",value=\"0x8000890\"},{number=\"25\",value=\"0x61000000\"}]\n(gdb)\n92-data-evaluate-expression $pc\n92^done,value=\"0x8000890 <i2cTask_WriteReg+60>\"\n(gdb)\n93-break-watch timeout\n93^done,wpt={number=\"6\",exp=\"timeout\"}\n(gdb)\n94-exec-continue\n94^running\n*running,thread-id=\"all\"\n(gdb)\n(gdb)\n=breakpoint-modified,bkpt={number=\"5\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"90\",thread-groups=[\"i1\"],times=\"2\",original-location=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:90\"}\n=breakpoint-modified,bkpt={number=\"6\",type=\"watchpoint\",disp=\"keep\",enabled=\"y\",what=\"timeout\",thread-groups=[\"i1\"],times=\"1\",original-location=\"timeout\"}\n~\"\\nBreakpoint \"\n~\"5, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:91\\n\"\n~\"91\\t    if ((timeout--) == 0) return 0xFF;\\n\"\n*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"5\",frame={addr=\"0x08000890\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"},thread-id=\"1\",stopped-threads=\"all\"\n95-thread-select 1\n96-stack-info-frame\n95^done,new-thread-id=\"1\",frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"}\n(gdb)\n96^done,frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"}\n(gdb)\n97-stack-list-frames\n97^done,stack=[frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"},frame={level=\"1\",addr=\"0x080008fa\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"15\"},frame={level=\"2\",addr=\"0x080008fc\",func=\"i2cTaskMain\",file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"16\"},frame={level=\"3\",addr=\"0xa5a5a5a4\",func=\"??\"}]\n(gdb)\n98-stack-list-arguments 1\n98^done,stack-args=[frame={level=\"0\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}]},frame={level=\"1\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"2\",args=[{name=\"dummy\",value=\"<optimized out>\"}]},frame={level=\"3\",args=[]}]\n(gdb)\n99-thread-info\n99^done,threads=[{id=\"1\",target-id=\"Thread <main>\",frame={level=\"0\",addr=\"0x08000890\",func=\"i2cTask_WriteReg\",args=[{name=\"deviceAddr\",value=\"<optimized out>\"},{name=\"regAddr\",value=\"<optimized out>\"},{name=\"Data\",value=\"<optimized out>\"}],file=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",fullname=\"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c\",line=\"91\"},state=\"stopped\"}],current-thread-id=\"1\"\n(gdb)\n100-thread-list-ids\n100^done,thread-ids={thread-id=\"1\"},current-thread-id=\"1\",number-of-threads=\"1\"\n(gdb)\n101-var-update --all-values *\n101^done,changelist=[{name=\"var4\",value=\"9998\",in_scope=\"true\",type_changed=\"false\",has_more=\"0\"}]\n(gdb)\n102-stack-list-locals 0\n102^done,locals=[name=\"timeout\"]\n(gdb)\n103-data-list-changed-registers\n103^done,changed-registers=[\"4\"]\n(gdb)\n104-data-list-register-values x 4\n104^done,register-values=[{number=\"4\",value=\"0x2710\"}]\n(gdb)\n105-data-evaluate-expression $pc\n105^done,value=\"0x8000890 <i2cTask_WriteReg+60>\"\n(gdb)\n106-exec-continue\n=thread-group-exited,id=\"i1\"\n106^error,msg=\"Warning:\\nCannot insert hardware breakpoint 1:Remote connection closed.\\n\"\n(gdb)\n",
+			"settings":
+			{
+				"buffer_size": 67752,
+				"line_ending": "Unix",
+				"name": "GDB Session",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "GNU gdb (7.10-1ubuntu3+9) 7.10\nCopyright (C) 2015 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"--host=x86_64-linux-gnu --target=arm-none-eabi\".\nType \"show configuration\" for configuration details.\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>.\nFind the GDB manual and other documentation resources online at:\n<http://www.gnu.org/software/gdb/documentation/>.\nFor help, type \"help\".\nType \"apropos word\" to search for commands related to \"word\"...\nReading symbols from FreeRTOS.elf...done.\nRemote debugging using localhost:4242\n0x080023fc in Reset_Handler ()\nNote: automatically using hardware breakpoints for read-only addresses.\n\nBreakpoint 1, i2cTask_WriteReg (deviceAddr=50 '2', regAddr=100 'd', Data=134 '\\\\206') at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\n73\t  I2C_GenerateSTART(I2C1, ENABLE);\n\nBreakpoint 2, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\n84\t  I2C_SendData(I2Cx, deviceAddr);\n\nBreakpoint 1, i2cTask_WriteReg (deviceAddr=50 '2', regAddr=100 'd', Data=134 '\\\\206') at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\n73\t  I2C_GenerateSTART(I2C1, ENABLE);\n\nBreakpoint 2, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\n84\t  I2C_SendData(I2Cx, deviceAddr);\n\nBreakpoint 5, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:91\n91\t    if ((timeout--) == 0) return 0xFF;\n\nBreakpoint 5, i2cTask_WriteReg (deviceAddr=<optimized out>, regAddr=<optimized out>, Data=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:91\n91\t    if ((timeout--) == 0) return 0xFF;\n",
+			"settings":
+			{
+				"buffer_size": 2158,
+				"line_ending": "Unix",
+				"name": "GDB Console",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": " uint8_t deviceAddr = <optimized out>\n uint8_t regAddr = <optimized out>\n uint8_t Data = <optimized out>\n uint32_t timeout = 9998\n",
+			"settings":
+			{
+				"buffer_size": 130,
+				"line_ending": "Unix",
+				"name": "GDB Variables",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:6\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:7\n0x08000850: b.w\t0x80007b4 <i2cTask_init>                                         # i2cTaskBefore+0\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:8\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:9\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:10\n0x080008e8: push\t{r3, lr}                                                        # i2cTaskMain+0\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:11\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:12\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:13\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:14\n0x080008ea: movs\tr0, #100\t; 0x64                                                 # i2cTaskMain+2\n0x080008ec: bl\t0x8001828 <vTaskDelay>                                            # i2cTaskMain+4\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:15\n0x080008f0: movs\tr1, #100\t; 0x64                                                 # i2cTaskMain+8\n0x080008f2: movs\tr2, #134\t; 0x86                                                 # i2cTaskMain+10\n0x080008f4: movs\tr0, #50\t; 0x32                                                  # i2cTaskMain+12\n0x080008f6: bl\t0x8000854 <i2cTask_WriteReg>                                      # i2cTaskMain+14\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:16\n0x080008fa: b.n\t0x80008ea <i2cTaskMain+2>                                        # i2cTaskMain+18\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:17\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:18\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:19\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:20\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:21\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:22\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:23\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:24\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:25\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:26\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:27\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:28\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:29\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:30\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:31\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:32\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:33\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:34\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:35\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:36\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:37\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:38\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:39\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:40\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:41\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:42\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:43\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:44\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:45\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:46\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:47\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:48\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:49\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:50\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:51\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:52\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:53\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:54\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:55\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:56\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:57\n0x08000840: strh.w\tr5, [sp, #12]                                                 # i2cTask_init+140\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:58\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:59\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:60\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:61\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:62\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:63\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:64\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:65\n0x0800083e: mov\tr0, r4                                                           # i2cTask_init+138\n0x08000844: bl\t0x8002150 <I2C_Init>                                              # i2cTask_init+144\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:66\n0x08000848: add\tsp, #24                                                          # i2cTask_init+148\n0x0800084a: pop\t{r4, r5, r6, pc}                                                 # i2cTask_init+150\n0x0800084c: lsls\tr0, r0, #16                                                     # i2cTask_init+152\n0x0800084e: ands\tr2, r0                                                          # i2cTask_init+154\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:67\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:68\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:69\n0x08000854: push\t{r3, r4, r5, r6, r7, lr}                                        # i2cTask_WriteReg+0\n0x08000856: mov\tr7, r0                                                           # i2cTask_WriteReg+2\n0x08000858: mov\tr6, r1                                                           # i2cTask_WriteReg+4\n0x0800085e: mov\tr5, r2                                                           # i2cTask_WriteReg+10\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:70\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:71\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:72\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\n0x0800085a: ldr\tr0, [pc, #128]\t; (0x80008dc <i2cTask_WriteReg+136>)              # i2cTask_WriteReg+6\n0x0800085c: movs\tr1, #1                                                          # i2cTask_WriteReg+8\n0x08000860: bl\t0x800223c <I2C_GenerateSTART>                                     # i2cTask_WriteReg+12\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:74\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:75\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:76\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:77\n0x08000864: movw\tr4, #10001\t; 0x2711                                             # i2cTask_WriteReg+16\n0x08000868: ldr\tr0, [pc, #112]\t; (0x80008dc <i2cTask_WriteReg+136>)              # i2cTask_WriteReg+20\n0x0800086a: ldr\tr1, [pc, #116]\t; (0x80008e0 <i2cTask_WriteReg+140>)              # i2cTask_WriteReg+22\n0x0800086c: bl\t0x8002270 <I2C_CheckEvent>                                        # i2cTask_WriteReg+24\n0x08000870: cbnz\tr0, 0x800087a <i2cTask_WriteReg+38>                             # i2cTask_WriteReg+28\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:78\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:79\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:80\n0x08000872: subs\tr4, #1                                                          # i2cTask_WriteReg+30\n0x08000874: bne.n\t0x8000868 <i2cTask_WriteReg+20>                                # i2cTask_WriteReg+32\n0x08000876: movs\tr0, #255\t; 0xff                                                 # i2cTask_WriteReg+34\n0x08000878: pop\t{r3, r4, r5, r6, r7, pc}                                         # i2cTask_WriteReg+36\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:81\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:82\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:83\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\n0x0800087a: ldr\tr0, [pc, #96]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+38\n0x0800087c: mov\tr1, r7                                                           # i2cTask_WriteReg+40\n0x0800087e: bl\t0x800226c <I2C_SendData>                                          # i2cTask_WriteReg+42\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:85\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:86\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:87\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:88\n0x08000882: movw\tr4, #10001\t; 0x2711                                             # i2cTask_WriteReg+46\n0x08000886: ldr\tr0, [pc, #84]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+50\n0x08000888: ldr\tr1, [pc, #88]\t; (0x80008e4 <i2cTask_WriteReg+144>)               # i2cTask_WriteReg+52\n0x0800088a: bl\t0x8002270 <I2C_CheckEvent>                                        # i2cTask_WriteReg+54\n0x0800088e: cbnz\tr0, 0x8000896 <i2cTask_WriteReg+66>                             # i2cTask_WriteReg+58\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:89\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:90\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:91\n0x08000890: subs\tr4, #1                                                          # i2cTask_WriteReg+60\n0x08000892: bne.n\t0x8000886 <i2cTask_WriteReg+50>                                # i2cTask_WriteReg+62\n0x08000894: b.n\t0x8000876 <i2cTask_WriteReg+34>                                  # i2cTask_WriteReg+64\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:92\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:93\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:94\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:95\n0x08000896: ldr\tr0, [pc, #68]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+66\n0x08000898: mov\tr1, r6                                                           # i2cTask_WriteReg+68\n0x0800089a: bl\t0x800226c <I2C_SendData>                                          # i2cTask_WriteReg+70\n0x0800089e: movw\tr4, #10001\t; 0x2711                                             # i2cTask_WriteReg+74\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:96\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:97\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:98\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:99\n0x080008a2: ldr\tr0, [pc, #56]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+78\n0x080008a4: ldr\tr1, [pc, #60]\t; (0x80008e4 <i2cTask_WriteReg+144>)               # i2cTask_WriteReg+80\n0x080008a6: bl\t0x8002270 <I2C_CheckEvent>                                        # i2cTask_WriteReg+82\n0x080008aa: cbnz\tr0, 0x80008b2 <i2cTask_WriteReg+94>                             # i2cTask_WriteReg+86\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:100\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:101\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:102\n0x080008ac: subs\tr4, #1                                                          # i2cTask_WriteReg+88\n0x080008ae: bne.n\t0x80008a2 <i2cTask_WriteReg+78>                                # i2cTask_WriteReg+90\n0x080008b0: b.n\t0x8000876 <i2cTask_WriteReg+34>                                  # i2cTask_WriteReg+92\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:103\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:104\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:105\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:106\n0x080008b2: ldr\tr0, [pc, #40]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+94\n0x080008b4: mov\tr1, r5                                                           # i2cTask_WriteReg+96\n0x080008b6: bl\t0x800226c <I2C_SendData>                                          # i2cTask_WriteReg+98\n0x080008ba: movw\tr4, #10001\t; 0x2711                                             # i2cTask_WriteReg+102\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:107\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:108\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:109\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:110\n0x080008be: ldr\tr0, [pc, #28]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+106\n0x080008c0: ldr\tr1, [pc, #32]\t; (0x80008e4 <i2cTask_WriteReg+144>)               # i2cTask_WriteReg+108\n0x080008c2: bl\t0x8002270 <I2C_CheckEvent>                                        # i2cTask_WriteReg+110\n0x080008c6: cbnz\tr0, 0x80008ce <i2cTask_WriteReg+122>                            # i2cTask_WriteReg+114\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:111\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:112\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:113\n0x080008c8: subs\tr4, #1                                                          # i2cTask_WriteReg+116\n0x080008ca: bne.n\t0x80008be <i2cTask_WriteReg+106>                               # i2cTask_WriteReg+118\n0x080008cc: b.n\t0x8000876 <i2cTask_WriteReg+34>                                  # i2cTask_WriteReg+120\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:114\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:115\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:116\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:117\n0x080008ce: ldr\tr0, [pc, #12]\t; (0x80008dc <i2cTask_WriteReg+136>)               # i2cTask_WriteReg+122\n0x080008d0: movs\tr1, #1                                                          # i2cTask_WriteReg+124\n0x080008d2: bl\t0x8002254 <I2C_GenerateSTOP>                                      # i2cTask_WriteReg+126\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:118\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:119\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:120\n0x080008d6: movs\tr0, #0                                                          # i2cTask_WriteReg+130\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:121\n0x080008d8: pop\t{r3, r4, r5, r6, r7, pc}                                         # i2cTask_WriteReg+132\n0x080008da: nop                                                                  # i2cTask_WriteReg+134\n0x080008dc: strb\tr0, [r0, r0]                                                    # i2cTask_WriteReg+136\n0x080008de: ands\tr0, r0                                                          # i2cTask_WriteReg+138\n0x080008e0: movs\tr1, r0                                                          # i2cTask_WriteReg+140\n0x080008e2: movs\tr3, r0                                                          # i2cTask_WriteReg+142\n0x080008e4: lsls\tr4, r0, #2                                                      # i2cTask_WriteReg+144\n0x080008e6: movs\tr7, r0                                                          # i2cTask_WriteReg+146\n0x080008fc: ldr\tr3, [pc, #40]\t; (0x8000928 <prvTaskExitError+44>)                # prvTaskExitError+0\n0x080008fe: ldr\tr3, [r3, #0]                                                     # prvTaskExitError+2\n0x08000900: adds\tr3, #1                                                          # prvTaskExitError+4\n0x08000902: beq.n\t0x8000916 <prvTaskExitError+26>                                # prvTaskExitError+6\n",
+			"settings":
+			{
+				"buffer_size": 15379,
+				"line_ending": "Unix",
+				"name": "GDB Disassembly",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "GNU gdb (7.10-1ubuntu3+9) 7.10\nCopyright (C) 2015 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"--host=x86_64-linux-gnu --target=arm-none-eabi\".\nType \"show configuration\" for configuration details.\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>.\nFind the GDB manual and other documentation resources online at:\n<http://www.gnu.org/software/gdb/documentation/>.\nFor help, type \"help\".\nType \"apropos word\" to search for commands related to \"word\"...\nReading symbols from FreeRTOS.elf...done.\n",
+			"settings":
+			{
+				"buffer_size": 793,
+				"line_ending": "Unix",
+				"name": "GDB Console",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "GDB Variables",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "GDB Disassembly",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "GNU gdb (7.10-1ubuntu3+9) 7.10\nCopyright (C) 2015 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"--host=x86_64-linux-gnu --target=arm-none-eabi\".\nType \"show configuration\" for configuration details.\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>.\nFind the GDB manual and other documentation resources online at:\n<http://www.gnu.org/software/gdb/documentation/>.\nFor help, type \"help\".\nType \"apropos word\" to search for commands related to \"word\"...\nReading symbols from FreeRTOS.elf...done.\nRemote debugging using :4242\n0x08002410 in Reset_Handler ()\nNote: automatically using hardware breakpoints for read-only addresses.\n\nBreakpoint 1, i2cTaskMain (dummy=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:15\n15\t\t\ti2cTask_WriteReg(0x32, 0x64);\n\nBreakpoint 1, i2cTaskMain (dummy=<optimized out>) at /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:15\n15\t\t\ti2cTask_WriteReg(0x32, 0x64);\n",
+			"settings":
+			{
+				"buffer_size": 1225,
+				"line_ending": "Unix",
+				"name": "GDB Console",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": " void * dummy = <optimized out>\n",
+			"settings":
+			{
+				"buffer_size": 32,
+				"line_ending": "Unix",
+				"name": "GDB Variables",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:10\n0x080008ec: push\t{r3, lr}                                                        # i2cTaskMain+0\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:11\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:12\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:13\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:14\n0x080008ee: movs\tr0, #100\t; 0x64                                                 # i2cTaskMain+2\n0x080008f0: bl\t0x8001828 <vTaskDelay>                                            # i2cTaskMain+4\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:15\n0x080008f4: movs\tr1, #100\t; 0x64                                                 # i2cTaskMain+8\n0x080008f6: movs\tr0, #50\t; 0x32                                                  # i2cTaskMain+10\n0x080008f8: bl\t0x8000854 <i2cTask_WriteReg>                                      # i2cTaskMain+12\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:16\n0x080008fc: b.n\t0x80008ee <i2cTaskMain+2>                                        # i2cTaskMain+16\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:17\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:18\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:19\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:20\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:21\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:22\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:23\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:24\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:25\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:26\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:27\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:28\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:29\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:30\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:31\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:32\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:33\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:34\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:35\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:36\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:37\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:38\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:39\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:40\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:41\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:42\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:43\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:44\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:45\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:46\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:47\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:48\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:49\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:50\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:51\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:52\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:53\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:54\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:55\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:56\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:57\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:58\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:59\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:60\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:61\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:62\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:63\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:64\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:65\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:66\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:67\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:68\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:69\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:70\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:71\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:72\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:74\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:75\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:76\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:77\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:78\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:79\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:80\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:81\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:82\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:83\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:85\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:86\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:87\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:88\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:89\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:90\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:91\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:92\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:93\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:94\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:95\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:96\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:97\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:98\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:99\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:100\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:101\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:102\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:103\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:104\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:105\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:106\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:107\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:108\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:109\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:110\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:111\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:112\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:113\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:114\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:115\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:116\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:117\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:118\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:119\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:120\n0x080008d6: movs\tr0, #0                                                          # i2cTask_WriteReg+130\n/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:121\n0x080008d8: pop\t{r4, r5, r6, pc}                                                 # i2cTask_WriteReg+132\n0x080008da: nop                                                                  # i2cTask_WriteReg+134\n0x080008dc: strb\tr0, [r0, r0]                                                    # i2cTask_WriteReg+136\n0x080008de: ands\tr0, r0                                                          # i2cTask_WriteReg+138\n0x080008e0: movs\tr1, r0                                                          # i2cTask_WriteReg+140\n0x080008e2: movs\tr3, r0                                                          # i2cTask_WriteReg+142\n0x080008e4: lsls\tr2, r0, #2                                                      # i2cTask_WriteReg+144\n0x080008e6: movs\tr7, r0                                                          # i2cTask_WriteReg+146\n0x080008e8: lsls\tr4, r0, #2                                                      # i2cTask_WriteReg+148\n0x080008ea: movs\tr7, r0                                                          # i2cTask_WriteReg+150\n",
+			"settings":
+			{
+				"buffer_size": 8680,
+				"line_ending": "Unix",
+				"name": "GDB Disassembly",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "i2cTaskMain(dummy = <optimized out>,);\n??();\n",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix",
+				"name": "GDB Callstack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "      r0: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      r1: 0x0000000010000b24       0.00000000 00000000000268438308 00000000000268438308\n      r2: 0x0000000010000000       0.00000000 00000000000268435456 00000000000268435456\n      r3: 0x00000000fffeffff              nan 00000000004294901759 -0000000000000065537\n      r4: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      r5: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      r6: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      r7: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      r8: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      r9: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n     r10: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n     r11: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n     r12: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      sp: 0x0000000010000f68       0.00000000 00000000000268439400 00000000000268439400\n      lr: 0x0000000008001801       0.00000000 00000000000134223873 00000000000134223873\n      pc: 0x00000000080008f4       0.00000000 00000000000134220020 00000000000134220020\n    xpsr: 0x0000000001000000       0.00000000 00000000000016777216 00000000000016777216\n     msp: 0x000000002001fffc       0.00000000 00000000000537001980 00000000000537001980\n     psp: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n control: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\nfaultmask: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n basepri: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n primask: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s0: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s1: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s2: 0x0000000061000000 147573952589676412928.00000000 00000000001627389952 00000000001627389952\n      s3: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s4: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s5: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s6: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s7: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s8: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s9: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s10: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s11: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s12: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s13: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s14: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s15: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s16: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s17: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s18: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s19: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s20: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s21: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s22: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s23: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s24: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s25: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s26: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s27: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s28: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s29: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s30: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s31: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n   fpscr: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n",
+			"settings":
+			{
+				"buffer_size": 4943,
+				"line_ending": "Unix",
+				"name": "GDB Registers",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "GDB Callstack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "GDB Registers",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "i2cTask_WriteReg(deviceAddr = <optimized out>,regAddr = <optimized out>,Data = <optimized out>,);\ni2cTaskMain(dummy = <optimized out>,);\ni2cTaskMain(dummy = <optimized out>,);\n??();\n",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix",
+				"name": "GDB Callstack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "      r0: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      r1: 0x0000000000070084       0.00000000 00000000000000458884 00000000000000458884\n      r2: 0x0000000000000400       0.00000000 00000000000000001024 00000000000000001024\n      r3: 0x00000000fffbff7c              nan 00000000004294705020 -0000000000000262276\n      r4: 0x0000000000002710       0.00000000 00000000000000010000 00000000000000010000\n      r5: 0x0000000000000086       0.00000000 00000000000000000134 00000000000000000134\n      r6: 0x0000000000000064       0.00000000 00000000000000000100 00000000000000000100\n      r7: 0x0000000000000032       0.00000000 00000000000000000050 00000000000000000050\n      r8: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      r9: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n     r10: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n     r11: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n     r12: 0x00000000a5a5a5a5      -0.00000000 00000000002779096485 -0000000001515870811\n      sp: 0x0000000010000f50       0.00000000 00000000000268439376 00000000000268439376\n      lr: 0x000000000800088f       0.00000000 00000000000134219919 00000000000134219919\n      pc: 0x0000000008000890       0.00000000 00000000000134219920 00000000000134219920\n    xpsr: 0x0000000001000000       0.00000000 00000000000016777216 00000000000016777216\n     msp: 0x000000002001fffc       0.00000000 00000000000537001980 00000000000537001980\n     psp: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n control: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\nfaultmask: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n basepri: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n primask: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s0: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s1: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s2: 0x0000000061000000 147573952589676412928.00000000 00000000001627389952 00000000001627389952\n      s3: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s4: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s5: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s6: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s7: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s8: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n      s9: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s10: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s11: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s12: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s13: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s14: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s15: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s16: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s17: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s18: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s19: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s20: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s21: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s22: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s23: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s24: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s25: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s26: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s27: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s28: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s29: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s30: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n     s31: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n   fpscr: 0x0000000000000000       0.00000000 00000000000000000000 00000000000000000000\n",
+			"settings":
+			{
+				"buffer_size": 4943,
+				"line_ending": "Unix",
+				"name": "GDB Registers",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "001 -    stopped - i2cTaskMain(dummy = <optimized out>);\n",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Unix",
+				"name": "GDB Threads",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "1 - /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:15\n",
+			"settings":
+			{
+				"buffer_size": 65,
+				"line_ending": "Unix",
+				"name": "GDB Breakpoints",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "GDB Threads",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "1 - /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:117\n3 - /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:106\n",
+			"settings":
+			{
+				"buffer_size": 132,
+				"line_ending": "Unix",
+				"name": "GDB Breakpoints",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "001 -    stopped - i2cTask_WriteReg(deviceAddr = <optimized out>, regAddr = <optimized out>, Data = <optimized out>);\n",
+			"settings":
+			{
+				"buffer_size": 118,
+				"line_ending": "Unix",
+				"name": "GDB Threads",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "1 - /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:73\n2 - /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:84\n5 - /home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c:90\n6 - watch: timeout\n",
+			"settings":
+			{
+				"buffer_size": 214,
+				"line_ending": "Unix",
+				"name": "GDB Breakpoints",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "ARM build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"ARM build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"ARM build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 152.0,
+		"last_filter": "Install ",
+		"selected_items":
+		[
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"installPa",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/haosx86/STM32F4-FreeRTOS-master",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/inc",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/src",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/RTC",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/RTC/RTC_TimeStamp",
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks",
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks/inc",
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src"
+	],
+	"file_history":
+	[
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks/inc/i2cTask.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/inc/ssd1306_i2c.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/inc/ssd1306.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/src/ssd1306.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/inc/fonts.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_rtc.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/i2cTask.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/ssd1306/src/ssd1306_i2c.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/config/FreeRTOSConfig.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/config/stm32f4xx_conf.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/hardware/startup_stm32f4xx.s",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Makefile",
+		"/home/haosx86/STM32F4-FreeRTOS-master/main.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks/src/blinkTask.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/I2C/I2C_EEPROM/system_stm32f4xx.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/IWDG/IWDG_Example/main.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/CortexM/MPU/main.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/CortexM/MPU/main.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/CortexM/MPU/stm32_mpu.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/CortexM/MPU/stm32_mpu.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/DCMI/DCMI_CameraExample/dcmi_ov2640.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/IWDG/IWDG_Example/main.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/tasks/inc/blinkTask.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/FreeRTOS/tasks.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/inc/stm32f4xx_i2c.h",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Libraries/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c",
+		"/home/haosx86/STM32F4-FreeRTOS-master/Project/STM32F4xx_StdPeriph_Examples/DCMI/DCMI_CameraExample/dcmi_ov2640.h",
+		"/home/haosx86/.config/sublime-text-3/Packages/SublimeGDB/Default.sublime-keymap",
+		"/home/haosx86/.config/sublime-text-3/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/home/haosx86/STM32F4-FreeRTOS-master/stm32f407ze_spl_freertos.sublime-project",
+		"/home/haosx86/.config/sublime-text-3/Packages/User/SublimeGDB.sublime-settings",
+		"/home/haosx86/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/haosx86/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/haosx86/.config/sublime-text-3/Packages/User/Terminal.sublime-settings",
+		"/home/haosx86/.config/sublime-text-3/Packages/Terminal/Terminal.sublime-settings",
+		"/home/haosx86/.config/sublime-text-3/Packages/User/Terminal (Linux).sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"RTC_Format_BCD",
+			"RTC_GetTime",
+			"RTC_TimeStructure",
+			"RTC_TimeTypeDef",
+			"RTC_TimeStructure",
+			"SSD1306_Putc",
+			"SSD1306_Putc(=",
+			"uint8_t ssd1306_I2C_IsDeviceConnected",
+			"uint8_t ssd1306_I2C_IsDeviceConnected(uint8_t address)",
+			"ssd1306_I2C_Start",
+			"I2C_ACK_ENABLE",
+			"25",
+			"SSD1306_WRITECOMMAND",
+			"DCMI_TIMEOUT_MAX",
+			"I2C_GenerateSTART",
+			"DMA",
+			"target extended-remote localhost:4242",
+			"tar extended-remote localhost:4242",
+			"tar extended-remote :4242",
+			"continue",
+			"dummy",
+			"trashInt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tasks/src/i2cTask.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1005,
+								1005
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_session.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 67752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67752,
+								67752
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_session.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2158,
+								2158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 716.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15379,
+								15379
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_disasm.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 793,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								683,
+								683
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 150.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_disasm.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1225,
+								1225
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 465.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8680,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8680,
+								8680
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_disasm.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4943,
+								4943
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_registers.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_registers.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4943,
+								4943
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeGDB/gdb_registers.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 18,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 65,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				3,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			],
+			[
+				2,
+				1,
+				3,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.33,
+			0.66,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.75,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 258.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "stm32f407ze_spl_freertos.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

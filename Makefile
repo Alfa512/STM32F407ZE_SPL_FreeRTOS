@@ -18,7 +18,7 @@ INCLUDE+=-I$(FREERTOS)/portable/GCC/ARM_CM4F
 INCLUDE+=-I$(CURDIR)/Libraries/CMSIS/Device/ST/STM32F4xx/Include
 INCLUDE+=-I$(CURDIR)/Libraries/CMSIS/Include
 INCLUDE+=-I$(CURDIR)/Libraries/STM32F4xx_StdPeriph_Driver/inc
-#INCLUDE+=-I$(CURDIR)/Libraries/ssd1306/inc
+INCLUDE+=-I$(CURDIR)/Libraries/ssd1306/inc
 INCLUDE+=-I$(CURDIR)/config
 INCLUDE+=-I$(CURDIR)/tasks/inc
 INCLUDE+=-I$(CURDIR)/directives/inc
@@ -44,6 +44,7 @@ SRC+=syscalls.c
 
 #FreeRTOS tasks
 SRC+=blinkTask.c
+SRC+=i2cTask.c
 
 # FreeRTOS Source Files
 SRC+=port.c
@@ -99,9 +100,9 @@ SRC+=stm32f4xx_gpio.c
 SRC+=stm32f4xx_rng.c
 
 #ssd1306 Lib files
-#SRC+=fonts.c
-#SRC+=ssd1306_i2c.c
-#SRC+=ssd1306.c
+SRC+=fonts.c
+SRC+=ssd1306_i2c.c
+SRC+=ssd1306.c
 
 CDEFS=-DUSE_STDPERIPH_DRIVER
 CDEFS+=-DSTM32F4XX
@@ -131,7 +132,7 @@ $(BUILD_DIR)/%.o: %.c
 	@echo [CC] $(notdir $<)
 	@$(CC) $(CFLAGS) $< -c -o $@
 
-all: $(OBJ)
+all: clean $(OBJ)
 	@echo [AS] $(ASRC)
 	@$(AS) -o $(ASRC:%.s=$(BUILD_DIR)/%.o) $(STARTUP)/$(ASRC)
 	@echo [LD] $(TARGET).elf

@@ -23,9 +23,9 @@
 #include "ssd1306.h"
 
 /* Write command */
-#define SSD1306_WRITECOMMAND(command)      ssd1306_I2C_Write(SSD1306_I2C, SSD1306_I2C_ADDR, 0x00, (command))
+#define SSD1306_WRITECOMMAND(command)      ssd1306_I2C_Write(SSD1306_I2C_ADDR, 0x00, (command))
 /* Write data */
-#define SSD1306_WRITEDATA(data)            ssd1306_I2C_Write(SSD1306_I2C, SSD1306_I2C_ADDR, 0x40, (data))
+#define SSD1306_WRITEDATA(data)            ssd1306_I2C_Write(SSD1306_I2C_ADDR, 0x40, (data))
 /* Absolute value */
 #define ABS(x)   ((x) > 0 ? (x) : -(x))
 
@@ -49,7 +49,7 @@ uint8_t SSD1306_Init(void) {
 	ssd1306_I2C_Init();
 	
 	/* Check if LCD connected to I2C */
-	if (!ssd1306_I2C_IsDeviceConnected(SSD1306_I2C, SSD1306_I2C_ADDR)) {
+	if (!ssd1306_I2C_IsDeviceConnected(SSD1306_I2C_ADDR)) {
 		/* Return false */
 		return 0;
 	}
@@ -115,7 +115,7 @@ void SSD1306_UpdateScreen(void) {
 		SSD1306_WRITECOMMAND(0x10);
 		
 		/* Write multi data */
-		ssd1306_I2C_WriteMulti(SSD1306_I2C, SSD1306_I2C_ADDR, 0x40, &SSD1306_Buffer[SSD1306_WIDTH * m], SSD1306_WIDTH);
+		ssd1306_I2C_WriteMulti(SSD1306_I2C_ADDR, 0x40, &SSD1306_Buffer[SSD1306_WIDTH * m], SSD1306_WIDTH);
 	}
 }
 
