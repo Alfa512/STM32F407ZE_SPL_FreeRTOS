@@ -35,6 +35,7 @@ void i2cTaskMain(void* dummy) {
     SSD1306_Fill(SSD1306_COLOR_BLACK);
     SSD1306_GotoXY(0, 0);
     SSD1306_Puts(currentTimeString, &Font_16x26, SSD1306_COLOR_WHITE);
+    SSD1306_DrawCircle(10, 10, 16, SSD1306_COLOR_WHITE);
     SSD1306_UpdateScreen();
 	}
 
