@@ -1,4 +1,6 @@
 #include "i2cTask.h"
+#include "stm32f4xx_rtc.h"
+#include "time.h"
 
 #define RTC_CLOCK_SOURCE_LSE 
 
@@ -12,12 +14,13 @@ RTC_TimeTypeDef RTC_TimeStampStructure;
 RTC_DateTypeDef RTC_TimeStampDateStructure;
 
 uint32_t uwAsynchPrediv = 0;
-uint32_t uwSynchPrediv = 0;
+uint32_t uwSynchPrediv = 0; 
 uint32_t uwSecondfraction = 0;
 uint8_t errorFlag = 0;
 
 char * errorMessage = "ERROR";
 char currentTimeString[100];
+char * myName = "by ALFA";
 
 void i2cTaskBefore(void) {
     SSD1306_Init();
@@ -28,15 +31,26 @@ uint8_t received_data[2];
 
 void i2cTaskMain(void* dummy) {
 
+  
 	/* main program loop */
 	while(!errorFlag) {
     RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
+    RTC_GetDate(RTC_Format_BIN, &RTC_DateStructure);
     sprintf(currentTimeString, "%d:%d:%d", RTC_TimeStructure.RTC_Hours, RTC_TimeStructure.RTC_Minutes, RTC_TimeStructure.RTC_Seconds);
     SSD1306_Fill(SSD1306_COLOR_BLACK);
-    SSD1306_GotoXY(0, 0);
-    SSD1306_Puts(currentTimeString, &Font_16x26, SSD1306_COLOR_WHITE);
-    SSD1306_DrawCircle(10, 10, 16, SSD1306_COLOR_WHITE);
-    SSD1306_DrawCircle(10, 30, 20, SSD1306_COLOR_WHITE);
+    SSD1306_GotoXY(10, 10);
+    SSD1306_Puts(currentTimeString, &Font_11x18, SSD1306_COLOR_WHITE);
+    //SSD1306_DrawCircle(15, 20, 15, SSD1306_COLOR_WHITE);
+    SSD1306_DrawCircle(105, 37, 10, SSD1306_COLOR_WHITE);
+    SSD1306_GotoXY(12, 32);
+
+    sprintf(currentTimeString, "%d:%d:%d", RTC_DateStructure.RTC_Date, RTC_DateStructure.RTC_Month, RTC_DateStructure.RTC_Year);
+    SSD1306_Puts(currentTimeString, &Font_11x18, SSD1306_COLOR_WHITE);
+    //SSD1306_Puts(myName, &Font_11x18, SSD1306_COLOR_WHITE);
+
+    SSD1306_GotoXY(12, 53);
+    SSD1306_Puts("S.T.A.L.K.E.R.", &Font_7x10, SSD1306_COLOR_WHITE);
+    //SSD1306_DrawRectangle(10, 27, 82, 25, SSD1306_COLOR_WHITE);
     SSD1306_UpdateScreen();
 	}
 

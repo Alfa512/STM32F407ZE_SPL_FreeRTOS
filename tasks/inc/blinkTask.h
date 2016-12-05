@@ -4,6 +4,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "stm32f4xx_conf.h"
+#include "ssd1306.h"
 
 #include "ccm.h"
 
