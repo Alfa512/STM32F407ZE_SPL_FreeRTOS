@@ -15,6 +15,7 @@
 // Task control functions
 void blinkTaskBefore(void);
 void blinkTaskMain(void*);
+void blinkTaskSlave(void*);
 void blinkTaskAfter(void);
 
 
@@ -25,6 +26,8 @@ void blinkTask_initGPIO(void);
 // Public variables
 
 extern StackType_t blinkTask_stack[BLINK_TASK_STACK_SIZE] CCM_RAM;  // Put task stack in CCM
+extern StackType_t blink2Task_stack[BLINK_TASK_STACK_SIZE] CCM_RAM;  // Put task stack in CCM
 extern StaticTask_t blinkTask_buffer CCM_RAM;  // Put TCB in CCM
+extern StaticTask_t blink2Task_buffer CCM_RAM;  // Put TCB in CCM
 
 #endif

@@ -1,7 +1,10 @@
 #include "blinkTask.h"
+#include "i2cTask.h"
 
 StackType_t blinkTask_stack[BLINK_TASK_STACK_SIZE] CCM_RAM;  // Put task stack in CCM
+StackType_t blink2Task_stack[BLINK_TASK_STACK_SIZE] CCM_RAM;  // Put task stack in CCM
 StaticTask_t blinkTask_buffer CCM_RAM;  // Put TCB in CCM
+StaticTask_t blink2Task_buffer CCM_RAM;  // Put TCB in CCM
 RTC_TimeTypeDef RTC_TimeStructure;
 
 
@@ -11,38 +14,57 @@ void blinkTaskBefore(void) {
   blinkTask_initGPIO();
 }
 
-void blinkTaskMain(void* dummy) {
-  uint32_t trashInt = 100;
-  /* main program loop */
-  
+void blinkTaskSlave(void* dummy)
+{
+    uint32_t trashInt = 100;
+
   for (;;) {
-    /* set led on */
     trashInt+=50; 
     if(trashInt>500) {
       trashInt = 100;
     }
     GPIO_WriteBit(GPIOF, GPIO_Pin_9, Bit_SET);
     GPIO_WriteBit(GPIOF, GPIO_Pin_10, Bit_SET);
-    /* delay */
     vTaskDelay(trashInt);
-    /* clear led */
     GPIO_WriteBit(GPIOF, GPIO_Pin_10, Bit_RESET);
     GPIO_WriteBit(GPIOF, GPIO_Pin_9, Bit_RESET);
+    vTaskDelay(trashInt);
+  }
+  vTaskDelete(NULL);
+}
 
+void blinkTaskMain(void* dummy) {
+  uint32_t t_delay = 100;
+  /* main program loop */
+  
+  for (;;) {
     uint32_t s1 = GPIO_ReadInputDataBit(GPIOF, GPIO_Pin_6);
     uint32_t s2 = GPIO_ReadInputDataBit(GPIOF, GPIO_Pin_7);
+    uint32_t s3 = GPIO_ReadInputDataBit(GPIOF, GPIO_Pin_5);
     RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
     if(s1 > 0)
     {
-      SSD1306_GotoXY(12, 53);
         RTC_TimeStructure.RTC_Hours++;
+        if(RTC_TimeStructure.RTC_Hours >= 24)
+          RTC_TimeStructure.RTC_Hours = 0;
         RTC_SetTime(RTC_Format_BIN, &RTC_TimeStructure);
+        i2cSetTimeModifier("H");
     }
     if(s2 > 0)
     {
-      SSD1306_GotoXY(12, 53);
         RTC_TimeStructure.RTC_Minutes++;
+        if(RTC_TimeStructure.RTC_Minutes >= 60)
+          RTC_TimeStructure.RTC_Minutes = 0;
         RTC_SetTime(RTC_Format_BIN, &RTC_TimeStructure);
+        i2cSetTimeModifier("M");
+    }
+    if(s3 > 0)
+    {
+        RTC_TimeStructure.RTC_Seconds++;
+        if(RTC_TimeStructure.RTC_Seconds >= 60)
+          RTC_TimeStructure.RTC_Seconds = 0;
+        RTC_SetTime(RTC_Format_BIN, &RTC_TimeStructure);
+        i2cSetTimeModifier("S");
     }
   //RTC_TimeStructure.RTC_Minutes = timeinfo->tm_min;
   //RTC_TimeStructure.RTC_Seconds = timeinfo->tm_sec;
@@ -50,7 +72,7 @@ void blinkTaskMain(void* dummy) {
 //RTC_TimeStructure.RTC_Hours
 
     /* delay */
-    vTaskDelay(trashInt);
+    vTaskDelay(t_delay);
   }
 
   /* never reached */
@@ -89,6 +111,8 @@ void blinkTask_initGPIO(void) {
   GPIO_Init(GPIOF, &GPIO_InitStruct);
 
   GPIO_InitStruct.GPIO_Pin = GPIO_Pin_7;
+  GPIO_Init(GPIOF, &GPIO_InitStruct);
+  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_5;
   GPIO_Init(GPIOF, &GPIO_InitStruct);
 
 }

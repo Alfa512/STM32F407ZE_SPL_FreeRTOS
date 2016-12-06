@@ -23,6 +23,16 @@ int main(void) {
     &blinkTask_buffer
   );
 
+  xTaskCreateStatic(
+    blinkTaskSlave,
+    "BLINK2",
+    BLINK_TASK_STACK_SIZE,
+    NULL,
+    1,
+    blink2Task_stack,
+    &blink2Task_buffer
+  );
+
   i2cTaskBefore();
   xTaskCreateStatic(
     i2cTaskMain,

@@ -17,10 +17,12 @@ uint32_t uwAsynchPrediv = 0;
 uint32_t uwSynchPrediv = 0; 
 uint32_t uwSecondfraction = 0;
 uint8_t errorFlag = 0;
+uint8_t accessFlag = 1;
 
 char * errorMessage = "ERROR";
 char currentTimeString[100];
 char * myName = "by ALFA";
+uint32_t trashInt = 10;
 
 void i2cTaskBefore(void) {
     SSD1306_Init();
@@ -29,9 +31,24 @@ void i2cTaskBefore(void) {
 
 uint8_t received_data[2];
 
+void i2cUpdateScreen()
+{
+  while(1)
+  {
+    if (accessFlag == 1)
+    {
+      accessFlag = 0;
+      SSD1306_UpdateScreen();
+      accessFlag = 1;
+      break;
+    }
+    vTaskDelay(trashInt);
+  }
+
+}
+
 void i2cTaskMain(void* dummy) {
 
-  
 	/* main program loop */
 	while(!errorFlag) {
     RTC_GetTime(RTC_Format_BIN, &RTC_TimeStructure);
@@ -51,13 +68,20 @@ void i2cTaskMain(void* dummy) {
     SSD1306_GotoXY(12, 53);
     SSD1306_Puts("S.T.A.L.K.E.R.", &Font_7x10, SSD1306_COLOR_WHITE);
     //SSD1306_DrawRectangle(10, 27, 82, 25, SSD1306_COLOR_WHITE);
-    SSD1306_UpdateScreen();
+    i2cUpdateScreen();
+    vTaskDelay(trashInt);
 	}
 
   while(1);
 
   /* never reached */
   vTaskDelete(NULL);
+}
+
+void i2cSetTimeModifier(char* modifier) {
+  SSD1306_GotoXY(100, 10);
+  SSD1306_Puts(modifier, &Font_7x10, SSD1306_COLOR_WHITE);
+  i2cUpdateScreen();
 }
 
 void i2cTaskAfter(void) {

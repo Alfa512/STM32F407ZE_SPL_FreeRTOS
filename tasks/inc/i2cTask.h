@@ -21,6 +21,7 @@ extern StaticTask_t i2cTask_buffer CCM_RAM;  // Put TCB in CCM
 // Task control functions
 void i2cTaskBefore(void);
 void i2cTaskMain(void*);
+void i2cSetTimeModifier(char*);
 void i2cTaskAfter(void);
 
 void RTC_Config(void);
